@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
       int16_t buffer;
       while(fread(&buffer,2,1,input))
       {
-          buffer=buffer*2;
+          buffer=buffer*factor;
           fwrite(&buffer,2,1,output);
       }
     // Close files
